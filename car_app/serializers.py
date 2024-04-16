@@ -5,7 +5,7 @@ from car_model_app.serializers import CarModelSerializer
 
 class CarSerializer(serializers.ModelSerializer):
     
-    car_model = CarModelSerializer()
+    car_model = CarModelSerializer(many=True)
 
     class Meta:
 
