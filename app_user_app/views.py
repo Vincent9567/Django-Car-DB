@@ -32,7 +32,7 @@ class SelectAppUser(APIView):
     def get(self, request, id):
 
         app_user = self.get_app_user(id)
-        app_user_serialized = AppUserSerializer(app_user)
+        app_user_serialized = AppUserSerializer(app_user, many)
         return Response(app_user_serialized)
         
 
