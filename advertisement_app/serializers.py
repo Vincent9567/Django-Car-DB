@@ -1,8 +1,8 @@
 # move_app/serializers.py
 from rest_framework import serializers
 from .models import Advertisement
-from car_app.serliazers import CarSerializer
-from app_user_app.serliazers import AppUserSerializer
+from car_app.serializers import CarSerializer
+from app_user_app.serializers import AppUserSerializer
 
 class AdvertisementSerializer(serializers.ModelSerializer):
     
