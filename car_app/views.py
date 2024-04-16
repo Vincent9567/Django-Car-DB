@@ -23,5 +23,12 @@ class AllCars(APIView):
         return Response(cars_serialized.data)
 
 
-class SelectedCar(APIView)
+class SelectedCar(APIView):
+
+    def get_car(self, id):
+
+        if type(id) == int:
+            return Car.objects.get(id = id)
+        e
+        
         
