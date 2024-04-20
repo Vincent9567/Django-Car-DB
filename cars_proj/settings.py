@@ -89,11 +89,11 @@ WSGI_APPLICATION = 'cars_proj.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "car_db",
+        "NAME": "cars",
         "USER": "postgres",
         "PASSWORD": "postgres",
-        "HOST": "localhost",  
-        "PORT": 5454,
+        "HOST": "db",  # Docker will handle resolving the container name to an IP address.
+        "PORT": 5432, # The Django container and Postgres are on the same network now, so no need for port mapping
     }
 }
 
