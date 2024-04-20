@@ -89,7 +89,7 @@ WSGI_APPLICATION = 'cars_proj.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "cars",
+        "NAME": "car_db",
         "USER": "postgres",
         "PASSWORD": "postgres",
         "HOST": "db",  # Docker will handle resolving the container name to an IP address.
